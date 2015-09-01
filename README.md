@@ -11,6 +11,7 @@ deployments, it also enables you to easily integrate pre-built assets from libra
 A [python manifest reader](https://github.com/markfinger/python-webpack-manifest) is
 available to consume the generated manifests.
 
+
 Usage
 -----
 
@@ -28,6 +29,7 @@ module.exports = {
 };
 ```
 
+
 Options
 -------
 
@@ -44,3 +46,48 @@ exposed via a webserver, set `outputRoot` to `/foo/bar` and the manifest paths
 will take the form `woz/some_file.js`. Assuming your files were served from
 `/static/` you can easily prepend the root static url and serve the asset as
 `/static/woz/some_file.js`.
+
+
+Manifest schema
+---------------
+
+Manifests can take three forms, depending on the state and outcome of the build.
+
+If webpack is still building, manifests will look like
+
+```javascript
+{
+  status: "building",
+  errors: null,
+  files: null
+}
+```
+
+Once webpack has completed successfully, manifests will look like
+
+```javascript
+{
+  status: "built",
+  errors: null,
+  files: {
+    <entry>: [
+      'rel/path/to/some_file.js',
+      ...
+    ],
+    ...
+  }
+}
+```
+
+If any errors are encountered during the build, manifests will look like
+
+```
+{
+  status: "errors",
+  errors: [
+    "<error text>",
+    ...
+  ],
+  files: null
+}
+```
