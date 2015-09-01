@@ -24,7 +24,7 @@ Usage
 -----
 
 ```javascript
-import WebpackManifestPlugin from 'webpack-yam-plugin';
+var WebpackManifestPlugin = require('webpack-yam-plugin');
 
 module.exports = {
   // ...
