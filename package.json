@@ -1,0 +1,33 @@
+{
+  "name": "webpack-yam-plugin",
+  "version": "0.1.0",
+  "description": "Yet another manifest plugin for webpack",
+  "license": "MIT",
+  "author": "Mark Finger <markfinger@gmail.com>",
+  "main": "lib/webpack-yam-plugin.js",
+  "homepage": "https://github.com/markfinger/webpack-yam-plugin",
+  "bugs": {
+    "url": "https://github.com/markfinger/webpack-yam-plugin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markfinger/webpack-yam-plugin.git"
+  },
+  "scripts": {
+    "test": "mocha lib/test/tests.js",
+    "build": "babel-node src/build.js"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.4.2",
+    "strip-ansi": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5",
+    "source-map-support": "^0.3.2",
+    "webpack": "^1.12.0"
+  }
+}

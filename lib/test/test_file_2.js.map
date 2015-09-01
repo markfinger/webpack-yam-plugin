@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/test/test_file_2.js"],"names":[],"mappings":";;AAAA,IAAI,GAAG,GAAG,OAAO,CAAC,eAAe,CAAC,CAAC;AACnC,OAAO,CAAC,eAAe,CAAC,CAAC","file":"test_file_2.js","sourcesContent":["var foo = require('./test_file_1');\nrequire('./test_file_3');"]}
