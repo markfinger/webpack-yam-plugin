@@ -12,6 +12,14 @@ A [python manifest reader](https://github.com/markfinger/python-webpack-manifest
 available to consume the generated manifests.
 
 
+Installation
+------------
+
+```
+npm install webpack-yam-plugin
+```
+
+
 Usage
 -----
 
