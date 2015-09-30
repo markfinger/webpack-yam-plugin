@@ -6,8 +6,8 @@ names without complicating your deployments, it also enables you to easily integ
 pre-built assets from libraries.
 
 The key difference between this plugin and the multitude of others is that it only 
-preserves paths in a relative form, which enables you can commit and deploy the manifest 
-to remote locations without any issues.
+preserves paths relative to a root that you define. This enables you to easily commit 
+and deploy the manifest to remote locations.
 
 A [python manifest reader](https://github.com/markfinger/python-webpack-manifest) is
 available to consume the generated manifests.
