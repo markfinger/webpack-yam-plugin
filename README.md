@@ -89,7 +89,7 @@ Once webpack has completed successfully, manifests will look like
 
 If any errors are encountered during the build, manifests will look like
 
-```
+```javascript
 {
   status: "errors",
   errors: [
