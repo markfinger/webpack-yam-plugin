@@ -1,12 +1,13 @@
 webpack-yam-plugin
 ==================
 
-Yet another manifest plugin for webpack.
+Yet another manifest plugin for webpack. Using a manifest enables you to hash the file 
+names without complicating your deployments, it also enables you to easily integrate 
+pre-built assets from libraries.
 
-The key difference in this plugin is that only preserves paths in a relative form,
-so you can commit and deploy the manifest to remote locations without any issues.
-Using a manifest enables you to hash the file names without complicating your
-deployments, it also enables you to easily integrate pre-built assets from libraries.
+The key difference between this plugin and the multitude of others is that it only 
+preserves paths in a relative form, which enables you can commit and deploy the manifest 
+to remote locations without any issues.
 
 A [python manifest reader](https://github.com/markfinger/python-webpack-manifest) is
 available to consume the generated manifests.
