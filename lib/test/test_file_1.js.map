@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/test/test_file_1.js"],"names":[],"mappings":";;AAAA,MAAM,CAAC,OAAO,GAAG,KAAK,CAAC","file":"test_file_1.js","sourcesContent":["module.exports = 'foo';"]}
