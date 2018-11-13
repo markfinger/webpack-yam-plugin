@@ -1,6 +1,6 @@
 {
   "name": "webpack-yam-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Yet another manifest plugin for webpack",
   "license": "MIT",
   "author": "Mark Finger <markfinger@gmail.com>",
